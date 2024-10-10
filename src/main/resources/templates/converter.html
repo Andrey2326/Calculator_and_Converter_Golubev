@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Конвертер валют</title>
+</head>
+<body>
+<h1>Конвертер валют</h1>
+<form action="/convert" method="post">
+    <label>Из валюты:</label>
+    <select name="fromCurrency">
+        <option value="CNY">Юань (CNY)</option>
+        <option value="RUB">Рубль (RUB)</option>
+    </select>
+    <label>В валюту:</label>
+    <select name="toCurrency">
+        <option value="CNY">Юань (CNY)</option>
+        <option value="RUB">Рубль (RUB)</option>
+    </select>
+    <input type="number" name="amount" placeholder="Сумма" required>
+    <button type="submit">Конвертировать</button>
+</form>
+
+<!-- Кнопка для возврата на главную страницу -->
+<form action="/" method="get">
+    <button type="submit">Вернуться на главную страницу</button>
+</form>
+</body>
+</html>

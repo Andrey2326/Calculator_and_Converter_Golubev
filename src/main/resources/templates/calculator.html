@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+</head>
+<body>
+<h1>Калькулятор</h1>
+<form action="/calculate" method="post">
+    <input type="number" name="num1" placeholder="Число 1" required>
+    <input type="number" name="num2" placeholder="Число 2" required>
+    <select name="operation">
+        <option value="add">Сложение</option>
+        <option value="subtract">Вычитание</option>
+        <option value="multiply">Умножение</option>
+        <option value="divide">Деление</option>
+    </select>
+    <button type="submit">Посчитать</button>
+</form>
+<form action="/" method="get">
+    <button type="submit">Вернуться на главную страницу</button>
+</form>
+</body>
+</html>
